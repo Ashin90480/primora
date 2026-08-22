@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PRIMORA 26 — IEEE SB JCMCSIIT</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Manrope:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== PRELOADER ===== -->
+<div class="preloader" id="preloader">
+  <div class="preloader-signal">
+    <div class="signal-box preloader-box">
+      <div class="signal-glow"></div>
+      <img class="logo-img logo-img--preloader" src="Logo.png" alt="PRIMORA">
+    </div>
+  </div>
+  <div class="preloader-status">
+    <span class="preloader-label">Initializing signal</span>
+    <span class="preloader-pct" id="preloaderPct">0%</span>
+  </div>
+  <div class="preloader-bar"><span id="preloaderFill"></span></div>
+</div>
+
+<!-- ===== SCROLL PROGRESS ===== -->
+<div class="progress-bar" id="progressBar"></div>
+
+<!-- ===== CUSTOM CURSOR ===== -->
+<div class="cursor-ring" id="cursorRing"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+
+<div class="grain"></div>
+<div class="scanlines" aria-hidden="true"></div>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header" id="top">
+  <div class="header-inner">
+    <div class="header-left">
+      <a class="logo-mark" href="#top" aria-label="PRIMORA home">
+        <img class="logo-img logo-img--nav" src="Logo.png" alt="PRIMORA">
+      </a>
+
+      <div class="header-partners">
+        <span class="header-divider" aria-hidden="true"></span>
+        <img class="partner-logo" src="ieee-sb-jcmcsiit-white.png" alt="IEEE Students Branch, John Cox Memorial CSI Institute of Technology">
+        <img class="partner-logo" src="ieee-logo-white.png" alt="IEEE">
+      </div>
+    </div>
+
+    <nav class="main-nav" id="main-nav">
+      <a href="#top" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#events">Events</a>
+      <a href="#registration">Registration</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-right">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero-eyebrows">
+    <span class="eyebrow left">Get ready</span>
+    <span class="eyebrow right">Coming soon</span>
+  </div>
+
+  <div class="logo-showcase" id="signalHousing">
+    <div class="logo-showcase-glow" aria-hidden="true"></div>
+    <div class="logo-showcase-ring" aria-hidden="true"></div>
+    <img class="logo-img logo-img--hero" src="Logo.png" alt="PRIMORA logo">
+  </div>
+
+  <h1 class="hero-title" id="heroTitle" data-glitch>PRIM<span class="dot-o">O</span>RA<span class="hero-year">'26</span></h1>
+  <p class="hero-sub reveal-fade" data-reveal-delay="0.1">The ultimate techno&nbsp;&&nbsp;cultural event</p>
+
+  <div class="hero-meta reveal-fade" data-reveal-delay="0.2">
+    <div class="meta-item"><span class="meta-k">Hosted by</span><span class="meta-v">IEEE Student Branch, JCMCSIIT</span></div>
+    <div class="meta-divider"></div>
+    <div class="meta-item"><span class="meta-k">Status</span><span class="meta-v meta-v--live">Registrations opening soon</span></div>
+  </div>
+
+  <a href="#registration" class="hero-cta reveal-fade" data-reveal-delay="0.3" data-magnetic>
+    <span>Notify me when it drops</span>
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="square"/></svg>
+  </a>
+
+  <div class="hero-event reveal-fade" data-reveal-delay="0.4">
+    <span class="hero-event-date">September 10 &amp; 11</span>
+    <span class="hero-event-venue">John Cox Memorial CSI Institute of Technology</span>
+  </div>
+
+  <div class="scroll-cue" aria-hidden="true"><span></span></div>
+</section>
+
+<!-- ===== MARQUEE ===== -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Techno &times; Cultural &times; Ideathon &times; Expo &times; IEEE &times; Innovation &times; </span>
+    <span>Techno &times; Cultural &times;  Ideathon &times; Expo &times; IEEE &times; Innovation &times; </span>
+  </div>
+</div>
+
+<!-- ===== HIGHLIGHTS ===== -->
+<section class="highlights" id="events">
+  <div class="section-head reveal-up">
+    <h2 class="section-title" data-split>Highlights</h2>
+    <p class="section-kicker">What's inside the signal</p>
+  </div>
+
+  <div class="chip-row reveal-up">
+    <span class="pill-chip" data-magnetic>1st Edition</span>
+    <span class="pill-chip" data-magnetic>2 Prime Days</span>
+    <span class="pill-chip" data-magnetic>All-Kerala Reach</span>
+  </div>
+
+  <div class="highlight-track">
+    <article class="highlight-node reveal-node" style="--i:0">
+      <span class="node-dot"></span>
+      <div class="node-body">
+        <h3><mark>Technical</mark> Workshops</h3>
+        <p>Hands-on workshops covering emerging technologies, practical skills, and real-world tools — learn by building, not just listening</p>
+      </div>
+    </article>
+
+    <article class="highlight-node reveal-node" style="--i:1">
+      <span class="node-dot"></span>
+      <div class="node-body">
+        <h3><mark>Talk</mark> Sessions</h3>
+        <p>Hear practical ideas, expert perspectives, and real stories from people working across technology and innovation.</p>
+      </div>
+    </article>
+
+    <article class="highlight-node reveal-node" style="--i:2">
+      <span class="node-dot"></span>
+      <div class="node-body">
+        <h3><mark>Games</mark> &amp; Challenges</h3>
+        <p>Engage in exciting gaming competitions and challenges throughout the event.</p>
+      </div>
+    </article>
+
+    <article class="highlight-node reveal-node" style="--i:3">
+      <span class="node-dot"></span>
+      <div class="node-body">
+        <h3>Cultural <mark>Stage</mark></h3>
+        <p>Live band performances, music, entertainment, and cultural showcases — bringing the campus together beyond technology.</p>
+       
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="about" id="about">
+  <div class="about-copy about-copy--solo reveal-up">
+    <span class="section-kicker">About the conclave</span>
+    <h2 class="section-title" data-split>PRIMORA&nbsp;26</h2>
+    <p>PRIMORA is a techno-cultural event for first years organised by the IEEE Student Branch of John Cox Memorial CSI Institute of Technology. It brings together students, professionals and enthusiasts from the college to explore what's next in technology — and to unwind through music, performances and open floor sessions once the workshops wrap.</p>
+    <p>Expert workshops, expert talk sessions,live competitions, and a cultural stage that runs through both days.</p>
+    <a href="#registration" class="ghost-btn" data-magnetic>Get on the notify list</a>
+  </div>
+</section>
+
+<!-- ===== ADMISSION PORTAL (TICKET) ===== -->
+<section class="portal" id="portal">
+  <span class="portal-kicker">Admission Portal</span>
+
+  <div class="ticket reveal-up plug-corners" data-tilt>
+    <span class="plug-trace" aria-hidden="true"></span>
+    <span class="ticket-notch ticket-notch--top" aria-hidden="true"></span>
+    <span class="ticket-notch ticket-notch--bottom" aria-hidden="true"></span>
+
+    <div class="ticket-main">
+      <div class="ticket-main-top">
+        <p class="ticket-presents">IEEE SB JCMCSIIT presents</p>
+        <span class="ticket-badge">Edition 01</span>
+      </div>
+
+      <div class="ticket-logo">
+        <img class="logo-img logo-img--ticket" src="Logo.png" alt="PRIMORA">
+      </div>
+      <p class="ticket-tag">Techno-Cultural Conclave</p>
+
+      <div class="ticket-rule"></div>
+
+      <div class="ticket-fields">
+        <div class="ticket-field">
+          <span class="field-k">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M3 9h18M8 3v4M16 3v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+           Date
+          </span>
+          <span class="field-v">September 10 & 11 2026</span>
+        </div>
+        <div class="ticket-field">
+          <span class="field-k">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s7-6.6 7-12a7 7 0 1 0-14 0c0 5.4 7 12 7 12z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="9" r="2.4" stroke="currentColor" stroke-width="1.6"/></svg>
+             Venue
+          </span>
+          <span class="field-v">JCMCSIIT Campus</span>
+        </div>
+        <div class="ticket-field">
+          <span class="field-k">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            Admission Type
+          </span>
+          <span class="field-v">All- JCMCSIIT First Years Access</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="ticket-stub">
+      <span class="stub-k">Stub identifier</span>
+      <span class="stub-v" id="ticketStubId">TKT-PRIMORA-0001</span>
+
+      <div class="barcode" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+
+      <span class="stub-k">Secure conclave pass</span>
+      <span class="stub-btn">Coming soon</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HOST — IEEE SB JCMCSIIT ===== -->
+<section class="host" id="host">
+  <div class="host-inner">
+    <img class="logo-img logo-img--host host-glyph reveal-up" data-tilt src="Logo.png" alt="PRIMORA">
+
+    <span class="section-kicker reveal-up">The host branch</span>
+    <h2 class="section-title reveal-up" data-split>IEEE SB JCMCSIIT</h2>
+
+    <p class="host-copy reveal-up">Being one of the most active technical society student branches at John Cox Memorial CSI Institute of Technology, IEEE SB JCMCSIIT has played a vital role in developing research, robotics and technology culture on campus. The branch runs workshops, talks and competitions year-round, connecting student engineers with the wider IEEE network across Kerala — PRIMORA is its an techno-cultural Event for first years.</p>
+
+    <div class="host-stats reveal-up">
+      <div class="stat"><span class="stat-num" data-count="1">00</span><span class="stat-label">Edition</span></div>
+      <div class="stat"><span class="stat-num" data-count="2">00</span><span class="stat-label">Days</span></div>
+      <div class="stat"><span class="stat-num stat-infinity">∞</span><span class="stat-label">Energy</span></div>
+    </div>
+
+    <div class="host-badge-lockup reveal-up plug-corners" data-reveal-delay="0.1" data-tilt>
+      <span class="plug-trace" aria-hidden="true"></span>
+      <span class="logo-text">IEEE SB JCMCSIIT</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== REGISTRATION ===== -->
+<section class="registration" id="registration">
+  <h2 class="reg-title" data-split>Registration</h2>
+
+  <div class="reg-card reveal-up plug-corners" data-tilt>
+    <span class="plug-trace" aria-hidden="true"></span>
+    <div class="reg-left">
+      <span class="reg-eyebrow">Event entry slip</span>
+      <h3 class="reg-pass-name"> PRIMORA PASS </h3>
+
+      <div class="reg-price">
+        <span class="price-currency">₹</span><span class="price-amount">700 only</span>
+        <span class="price-note">offer prize</span>
+      </div>
+    </div>
+
+    <div class="reg-divider" aria-hidden="true"></div>
+
+    <div class="reg-right">
+      <div class="barcode barcode--reg" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <span class="barcode-label" id="stubId">PASS-01-RAS</span>
+
+      <button class="reg-btn" id="notifyBtn" data-magnetic>Get Pass</button>
+    </div>
+  </div>
+
+  <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer" id="contact">
+  <div class="footer-grid reveal-up">
+    <div class="footer-brand">
+      <span class="logo-mark">
+        <img class="logo-img logo-img--footer" src="Logo.png" alt="PRIMORA">
+      </span>
+      <p>A techno-cultural conclave by IEEE Student Branch, JCMCSIIT.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <a href="#top" data-magnetic>Home</a>
+      <a href="#about" data-magnetic>About Us</a>
+      <a href="#events" data-magnetic>Events</a>
+      <a href="#registration" data-magnetic>Registration</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Partner</h4>
+      <a href= data-magnetic>IEEE SB JCMCSIIT</a>
+      <a href="https://www.jcmcsiit.ac.in" data-magnetic>John Cox Memorial CSI Institute of Technology</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Follow Us</h4>
+      <a href="https://www.instagram.com/ieee_sb_jcmcsiit?igsi=ODhvdzYxeHdqdWt3&utm_source=qr" data-magnetic>Instagram</a>
+      <a href="https://www.linkedin.com/company/ieee-sb-jcmcsiit" data-magnetic>LinkedIn</a>
+      <a href="https://whatsapp.com/channel/0029Vb6HaoR0AgW4e1kBG225" data-magnetic>WhatsApp</a>
+    </div>
+  </div>
+
+  <div class="footer-base">
+    <span>© 2026 PRIMORA — IEEE SB JCMCSIIT. All rights reserved.</span>
+    <span class="footer-signal" aria-hidden="true"></span>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
